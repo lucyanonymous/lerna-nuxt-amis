@@ -1,0 +1,21 @@
+{
+  "name": "lerna",
+  "root": true,
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:project": "cd packages/project && yarn dev",
+    "bootstrap": "lerna bootstrap"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "vuepress": "^1.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "esm": "^3.2.25",
+    "lerna": "^3.19.0"
+  }
+}
